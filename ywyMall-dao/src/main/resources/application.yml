@@ -2,7 +2,7 @@ spring:
   application:
     name: dao
   datasource:
-    url: jdbc:mysql://localhost:3306/spring_boot_demo?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/spring_boot_demo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
     password: 144lujia
     driver-class-name: com.mysql.cj.jdbc.Driver
