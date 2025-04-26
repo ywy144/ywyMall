@@ -1,7 +1,7 @@
 package com.ywy144.ywyMallDao;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.ywy144.ywyMallDao.mapper.ProductBaseInfoMapper;
+import com.ywy144.ywyMallDao.repo.ProductBaseInfoRepo;
 import org.junit.jupiter.api.Test;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,12 +14,11 @@ class YwyMallDaoApplicationTests {
     @Autowired
     DruidDataSource dataSource;
     @Autowired
-    ProductBaseInfoMapper productBaseInfoMapper;
+    ProductBaseInfoRepo productBaseInfoRepo;
 
     @Test
     void contextLoads() {
-        System.out.println(productBaseInfoMapper.selectByPrimaryKey(1));
-        System.out.println(dataSource.getMaxActive());
+        System.out.println(productBaseInfoRepo.findById(1L));
     }
 
 }

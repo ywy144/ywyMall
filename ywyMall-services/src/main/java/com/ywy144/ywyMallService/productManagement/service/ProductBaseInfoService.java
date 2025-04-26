@@ -8,9 +8,9 @@ import java.util.List;
 
 public interface ProductBaseInfoService {
 
-    BaseResult<List<ProductBaseInfo>> queryByCondition(ProductBaseInfoQueryDto productBaseInfoQueryDTO);
-
-    BaseResult<List<ProductBaseInfo>> queryByIds(List<Integer> ids);
-
-    BaseResult<Object> insert(ProductBaseInfo productBaseInfo);
+//    BaseResult<List<ProductBaseInfo>> queryByCondition(ProductBaseInfoQueryDto productBaseInfoQueryDTO);
+//
+//    BaseResult<List<ProductBaseInfo>> queryByIds(List<Integer> ids);
+//
+//    BaseResult<Object> insert(ProductBaseInfo productBaseInfo);
 }

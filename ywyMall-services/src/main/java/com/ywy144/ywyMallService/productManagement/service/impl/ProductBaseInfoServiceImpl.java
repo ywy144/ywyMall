@@ -14,26 +14,26 @@ import java.util.List;
 @Service
 public class ProductBaseInfoServiceImpl implements ProductBaseInfoService {
 
-    @Resource
-    private ProductBaseInfoDao productBaseInfoDao;
-
-    @Override
-    public BaseResult<List<ProductBaseInfo>> queryByCondition(ProductBaseInfoQueryDto productBaseInfoQueryDTO) {
-        return BaseResult.success(productBaseInfoDao.queryByCondition(productBaseInfoQueryDTO));
-    }
-
-    @Override
-    public BaseResult<List<ProductBaseInfo>> queryByIds(List<Integer> ids) {
-        return BaseResult.success(productBaseInfoDao.queryByIds(ids));
-    }
-
-    @Override
-    public BaseResult<Object> insert(ProductBaseInfo productBaseInfo) {
-        try {
-            Integer result = productBaseInfoDao.insert(productBaseInfo);
-            return BaseResult.success(result);
-        } catch (RuntimeException exception) {
-            return BaseResult.failure(ResultCode.FAILED.getCode(), exception.getCause());
-        }
-    }
+//    @Resource
+//    private ProductBaseInfoDao productBaseInfoDao;
+//
+//    @Override
+//    public BaseResult<List<ProductBaseInfo>> queryByCondition(ProductBaseInfoQueryDto productBaseInfoQueryDTO) {
+//        return BaseResult.success(productBaseInfoDao.queryByCondition(productBaseInfoQueryDTO));
+//    }
+//
+//    @Override
+//    public BaseResult<List<ProductBaseInfo>> queryByIds(List<Integer> ids) {
+//        return BaseResult.success(productBaseInfoDao.queryByIds(ids));
+//    }
+//
+//    @Override
+//    public BaseResult<Object> insert(ProductBaseInfo productBaseInfo) {
+//        try {
+//            Integer result = productBaseInfoDao.insert(productBaseInfo);
+//            return BaseResult.success(result);
+//        } catch (RuntimeException exception) {
+//            return BaseResult.failure(ResultCode.FAILED.getCode(), exception.getCause());
+//        }
+//    }
 }
