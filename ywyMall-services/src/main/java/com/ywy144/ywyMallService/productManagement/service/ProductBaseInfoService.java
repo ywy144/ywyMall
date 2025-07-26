@@ -13,4 +13,6 @@ public interface ProductBaseInfoService {
 //    BaseResult<List<ProductBaseInfo>> queryByIds(List<Integer> ids);
 //
 //    BaseResult<Object> insert(ProductBaseInfo productBaseInfo);
+
+    12
 }
